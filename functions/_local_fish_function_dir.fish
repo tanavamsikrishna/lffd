@@ -1,5 +1,4 @@
-# loading directory local fish functions
-function __local_fish_function_dir --on-variable PWD
+function _local_fish_function_dir --on-variable PWD
     if test -d ./.fish-functions
         set -g __lffd_dir_full_path (realpath ./.fish-functions)
         if not contains $__lffd_dir_full_path $fish_function_path
