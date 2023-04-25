@@ -14,7 +14,6 @@ function _local_fish_function_dir --on-variable PWD
         set -g _lffd_dir_full_path (realpath ./.fish-functions)
         if not contains $_lffd_dir_full_path $fish_function_path
             set fish_function_path $_lffd_dir_full_path $fish_function_path
-            return
         else
             set -ge _lffd_dir_full_path
         end
