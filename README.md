@@ -1,5 +1,5 @@
 # lffd
 Load/Unload a location directory with fish functions dynamically
 
-### Usage
+### Installation
 `fisher install tanavamsikrishna/lffd`
