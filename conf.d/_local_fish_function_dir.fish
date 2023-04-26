@@ -10,7 +10,7 @@ end
 
 function _local_fish_function_dir --on-variable PWD
     set -f local_fish_functions_dir $PWD"/.fish-functions"
-    if test $_lffd_dir_full_path = $local_fish_functions_dir
+    if test "$_lffd_dir_full_path" = $local_fish_functions_dir
         return
     end
     _remove_previous_dir
