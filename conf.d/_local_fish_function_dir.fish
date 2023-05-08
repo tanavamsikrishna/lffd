@@ -9,6 +9,7 @@ function _remove_previous_dir
 end
 
 function _local_fish_function_dir --on-variable PWD
+    status --is-command-substitution; and return
     set -f local_fish_functions_dir $PWD"/.fish-functions"
     if test "$_lffd_dir_full_path" = $local_fish_functions_dir
         return
